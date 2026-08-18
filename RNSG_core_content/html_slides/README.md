@@ -21,24 +21,25 @@ py -m http.server 8000
 - Self-check questions use keyboard-accessible radio controls and reveal correctness, the correct answer, and rationale after selection.
 - Semantic tables use PDF-inspired navy headers, pale-blue alternating rows, bold key columns, captions, and responsive overflow.
 - Take Note, danger, priority, critical alert, and case content uses the supplied tan, red, and blue semantic color code.
+- Infographics are inserted as standalone visual-learning slides after their source-topic anchors. See [INFOGRAPHIC_PLACEMENTS.md](INFOGRAPHIC_PLACEMENTS.md).
 - Semantic landmarks, skip links, visible focus, live slide-status announcements, responsive layouts, reduced-motion support, high-contrast adjustments, captions, and long descriptions are included.
 
 ## Deck/source map
 
-| Deck | Markdown source | Image folder | Slides | Interactive questions |
-|---|---|---|---:|---:|
-| 1523_day1 | `RNSG1523_core_content/RNSG_1523_Day1_Slides.md` | `RNSG1523_core_content/images_day1` | 50 | 8 |
-| 1523_day2 | `RNSG1523_core_content/RNSG_1523_Day2_Slides.md` | `RNSG1523_core_content/images_day2` | 52 | 8 |
-| 1523_day3 | `RNSG1523_core_content/RNSG_1523_Day3_Slides.md` | `RNSG1523_core_content/images_day3` | 47 | 8 |
-| 1523_day4 | `RNSG1523_core_content/RNSG_1523_Day4_Slides.md` | `RNSG1523_core_content/images_day4` | 41 | 8 |
-| 2514_day1 | `RNSG2514_core_content/RNSG_2514_Day1_Slides.md` | `RNSG2514_core_content/images_day1` | 39 | 6 |
-| 2514_day2 | `RNSG2514_core_content/RNSG_2514_Day2_Slides.md` | `RNSG2514_core_content/images_day2` | 32 | 6 |
-| 2514_day3 | `RNSG2514_core_content/RNSG_2514_Day3_Slides.md` | `RNSG2514_core_content/images_day3` | 31 | 6 |
-| 2514_day4 | `RNSG2514_core_content/RNSG_2514_Day4_Slides.md` | `RNSG2514_core_content/images_day4` | 36 | 8 |
+| Deck | Markdown source | Image folder | Source slides | Infographic slides | Total slides | Interactive questions |
+|---|---|---|---:|---:|---:|---:|
+| 1523_day1 | `RNSG1523_core_content/RNSG_1523_Day1_Slides.md` | `RNSG1523_core_content/images_day1` | 50 | 8 | 58 | 8 |
+| 1523_day2 | `RNSG1523_core_content/RNSG_1523_Day2_Slides.md` | `RNSG1523_core_content/images_day2` | 52 | 6 | 58 | 8 |
+| 1523_day3 | `RNSG1523_core_content/RNSG_1523_Day3_Slides.md` | `RNSG1523_core_content/images_day3` | 47 | 3 | 50 | 8 |
+| 1523_day4 | `RNSG1523_core_content/RNSG_1523_Day4_Slides.md` | `RNSG1523_core_content/images_day4` | 41 | 2 | 43 | 8 |
+| 2514_day1 | `RNSG2514_core_content/RNSG_2514_Day1_Slides.md` | `RNSG2514_core_content/images_day1` | 39 | 4 | 43 | 6 |
+| 2514_day2 | `RNSG2514_core_content/RNSG_2514_Day2_Slides.md` | `RNSG2514_core_content/images_day2` | 32 | 5 | 37 | 6 |
+| 2514_day3 | `RNSG2514_core_content/RNSG_2514_Day3_Slides.md` | `RNSG2514_core_content/images_day3` | 31 | 3 | 34 | 6 |
+| 2514_day4 | `RNSG2514_core_content/RNSG_2514_Day4_Slides.md` | `RNSG2514_core_content/images_day4` | 36 | 2 | 38 | 8 |
 
 ## Assets and assumptions
 
-- All 328 matching course-folder JPG/JPEG/PNG assets are used once, one per source slide.
+- All source-slide assets remain matched to their original Markdown slides; approved infographic assets are added as standalone slides.
 - Matching generated PNG alternates were preserved and reported in [UNUSED_IMAGES.md](UNUSED_IMAGES.md); they were not silently deleted.
 - The best available existing Dr. Victor Garcia portrait was copied from the workspace into `assets/author/dr-victor-garcia.png`.
 - The intro slide includes the exact requested author line: “Built by Dr. Victor Garcia M, MSN, FNP-C, RN”.
