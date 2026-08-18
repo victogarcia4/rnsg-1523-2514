@@ -1,0 +1,138 @@
+# RNSG2514_Case_PPH_v1.md
+
+Unfolding Case (WO-G) — Postpartum Hemorrhage After Vaginal Birth
+
+RNSG 2514 Nursing III ·
+
+#### Traces to objectives:
+
+2514-D1-4 ·
+
+Hemorrhage ·
+
+6 scenes, one per NCJMM operation.
+
+Denise, 29, G3 P3, 20 minutes after a vaginal birth of a 4,000 g infant following an oxytocin-augmented labor.
+
+--------------------------------------------------------------------------------
+
+Scene 1 — Recognize Cues (highlight)
+
+Fundus boggy, 2 cm above the umbilicus and deviated right; steady trickle of bright-red blood; perineal pad saturated in 10 minutes; BP 104/62, HR 104. Bladder palpable.
+
+Highlight the cues of early postpartum hemorrhage and its likely cause.
+
+boggy, high, right-deviated fundus (suggesting a full bladder and atony) + ongoing bleeding + rising HR.
+
+A boggy displaced fundus with bleeding is atony, the first of the 4 Ts; a full bladder worsens it \[ACOG PB 183\].
+
+Scene 2 — Analyze Cues (matrix)
+
+Using the 4 Ts, match each finding to its most likely cause.
+
+Cause (4 Ts)
+
+Boggy uterus
+
+Tone (atony)
+
+Bladder distension displacing the uterus
+
+Tone (contributing)
+
+Intact placenta delivered complete
+
+Tissue (excluded)
+
+No visible laceration on inspection
+
+Trauma (excluded)
+
+Systematically the picture is Tone; excluding Tissue and Trauma sharpens the response \[ACOG PB 183\].
+
+Scene 3 — Prioritize Hypotheses (cloze/dropdown)
+
+The priority hypothesis is
+
+\[uterine atony\]
+
+, and the first corrective step is
+
+\[fundal massage and emptying the bladder\]
+
+while giving a uterotonic.
+
+Treat tone first because atony causes most PPH \[ACOG PB 183\].
+
+Scene 4 — Generate Solutions (extended multiple response)
+
+Select the 3 immediate interventions.
+
+✅ Perform firm fundal massage
+
+✅ Ensure the bladder is emptied
+
+✅ Administer oxytocin per protocol and quantify blood loss
+
+❌ Give methylergonovine to a patient with severe hypertension
+
+❌ Wait 30 minutes to reassess
+
+❌ Place in reverse Trendelenburg as the primary measure
+
+Massage, bladder emptying, oxytocin, and quantified loss are first-line \[ACOG PB 183\].
+
+Scene 5 — Take Actions (drag-and-drop ordering)
+
+Bleeding continues; estimated loss now 1,100 mL.
+
+Order the escalation steps.
+
+Call for help and notify the provider
+
+Ensure two large-bore IVs and give isotonic fluid
+
+Administer a second-line uterotonic per order (e.g., carboprost if no asthma)
+
+Prepare for possible transfusion and continue quantifying loss
+
+Document the event timeline and interventions
+
+Staged hemorrhage response prevents the delays that drive maternal mortality \[ACOG PB 183\].
+
+Scene 6 — Evaluate Outcomes (trend)
+
+hour 0 — fundus boggy, QBL 1,100 mL, BP 100/58, HR 112; hour 1 — fundus firm at umbilicus, QBL +120 mL, BP 110/66, HR 92; hour 2 — fundus firm below umbilicus, QBL +30 mL, BP 118/72, HR 80.
+
+Which interpretation best evaluates the response?
+
+The interventions were effective — firm fundus, slowing loss, and normalizing vitals.
+
+Evaluate PPH treatment by trend in fundal tone, cumulative loss, and perfusion, not one reading \[ACOG PB 183\].
+
+--------------------------------------------------------------------------------
+
+Debrief — three decision points students most often miss
+
+Ignoring the bladder.
+
+A full bladder both displaces the fundus and worsens atony; emptying it is part of the fix.
+
+Choosing the wrong uterotonic for the comorbidity.
+
+Methylergonovine in hypertension and carboprost in asthma are the classic errors.
+
+Under-quantifying loss.
+
+Visual estimation understates blood loss; QBL drives timely escalation.
+
+\[VERIFY: departmental PPH bundle order set and massive transfusion protocol thresholds — Dr. Sharma.\]
+
+GATE REPORT
+
+Gate 2 Traceability: PASS — 2514-D1-4; six scenes = six operations.
+
+Gate 6 Internal consistency: PASS — QBL cumulative and vitals trend are arithmetic-consistent.
+
+Gate 7 Safety: PASS — uterotonic contraindications explicit.
+
