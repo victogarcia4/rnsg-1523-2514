@@ -12,13 +12,15 @@ The application will be a **learning and remediation resource**, not an official
 
 | Included in the approved build scope | Explicitly deferred unless later approved |
 | --- | --- |
-| Eight day-level study paths, HTML teaching presentations, instructor-approved visuals, existing infographics, NGN-style activities, source/credit pages, progress saved in the browser, accessibility support, and Vercel deployment | Student accounts, gradebook/LMS synchronization, faculty analytics, cloud persistence, adaptive scoring, live collaboration, payment, clinical advice, or publication of faculty-only exam-item banks |
+| Eight day-level study paths, HTML teaching presentations, instructor-approved visuals, existing infographics, a separate supplementary NGN clinical-case library, formative exit tickets, high-yield and terminology resources, source/credit pages, progress saved in the browser, accessibility support, and Vercel deployment | Student accounts, gradebook/LMS synchronization, faculty analytics, cloud persistence, adaptive scoring, live collaboration, payment, clinical advice, or publication of faculty-only exam-item banks |
 
 > **Approval gate:** The plan assumes an initial static, student-facing application. A future authenticated faculty or student portal would require a separate privacy, data, and architecture decision.
 
 ## 2. Source Analysis and Content Baseline
 
-All **16 Markdown files** currently in the repository were analyzed: eight daily study guides, two course indexes, one RNSG 1523 infographic specification, and five repository-wide planning, presentation, lesson-plan, or infographic-production documents. The study guides establish the primary instructional sequence; the root indexes provide textbook and objective mapping; the public planning documents define visual, accessibility, source, and assessment expectations. [1] [2] [3] [4] [5] [6] [7] [8]
+All **41 Markdown files** currently in the repository were analyzed: the original eight daily study guides, two course indexes, infographic and production specifications, repository-wide lesson plans, and 25 newly added case, study-resource, item-bank, terminology, and planning files. The study guides establish the primary instructional sequence; the root indexes provide textbook and objective mapping; and the planning documents define visual, accessibility, source, assessment, and safety expectations. [1] [2] [3] [4] [5] [6] [7] [8]
+
+The new files add **14 supplementary unfolding clinical cases**: six for RNSG 1523 and eight for RNSG 2514. These cases are separate active-learning modules rather than HTML presentation slides. They include sequential clinical-judgment scenes, structured response types, rationales, trend data, and debriefs; their clinical claims, answer keys, local-policy details, and cited authorities remain subject to faculty review before student release. [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25]
 
 The existing media inventory contains **22 files** in `1523 infographics`, **14 optimized JPEG files** in `2514`, and the faculty portrait `public/vhgm pic foto.png`. The plan treats these as source assets. Their final routing into the deployable application will be controlled by an asset manifest rather than ad hoc file references.
 
@@ -53,7 +55,7 @@ Each subject will be implemented as a short **HTML presentation deck** rather th
 
 ## 3. Learning Design and NGN Activity Framework
 
-Every day will contain one **unfolding case activity**. The case will use a student-safe scenario and will ask learners to recognize and prioritize information, choose actions, and evaluate a changing clinical situation. The activity structure will align each interaction to the NCSBN Clinical Judgment Measurement Model’s measurable cognitive work without representing itself as an official NCLEX examination. [9]
+The application will contain a dedicated **NGN Clinical Cases** area that is distinct from the HTML presentation-deck experience. Day pages may recommend an anchor case and link to relevant cases, but no case will be embedded as a teaching slide. Each case will use a student-safe scenario and will ask learners to recognize and prioritize information, choose actions, and evaluate a changing clinical situation. The activity structure will align each interaction to the NCSBN Clinical Judgment Measurement Model’s measurable cognitive work without representing itself as an official NCLEX examination. [9]
 
 | NGN learning step | In-app behavior | Supported interaction patterns |
 | --- | --- | --- |
@@ -64,7 +66,42 @@ Every day will contain one **unfolding case activity**. The case will use a stud
 | Take actions | Sequence a response under time-sensitive conditions | Ordered response; drag-to-sequence alternative using keyboard controls |
 | Evaluate outcomes | Interpret response and determine what to reassess or escalate | Outcome selection; follow-up cue review; debrief rationale |
 
-The activity engine will be **data-driven**. Content authors will define the case stem, cues, options, correct answers, rationales, references, debrief, and clinical-judgment tags in reviewed content files. This avoids hard-coding individual questions into page components, enables faculty review of each answer key, and permits later expansion without redesigning the application.
+### 3.1 Supplementary NGN Clinical-Case Inventory
+
+The new case files will form a searchable, filterable clinical-case library. A case may carry a primary day assignment and one or more cross-day links when its content bridges assessment, management, intrapartum, or newborn topics. The proposed day placement below preserves explicit file mappings where present and marks cross-day assignments for faculty confirmation.
+
+| Course path | Supplementary case activity | Proposed library placement | Case focus |
+| --- | --- | --- | --- |
+| RNSG 1523 Day 1 | Adolescent contraception | Day 1 | Method eligibility, dual protection, counseling, and ethical/legal considerations. |
+| RNSG 1523 Day 2–3 | Rh-negative pregnancy | Cross-day prenatal care | Rh(D) immune-globulin prevention and chronological prophylaxis reasoning. |
+| RNSG 1523 Day 3–4 | Rising blood pressure in pregnancy | Cross-day warning-signs and surveillance | Trend recognition, escalation, and surveillance for preeclampsia. |
+| RNSG 1523 Day 3–4 | Warning-sign triage | Cross-day warning-signs and surveillance | Urgent prenatal triage for a concerning symptom cluster. |
+| RNSG 1523 Day 3–4 | GDM diagnosis | Cross-day nutrition, screening, and management | Screening versus diagnostic testing and initial diet-controlled management. |
+| RNSG 1523 Day 4 | Abnormal quad screen | Day 4 | Screening interpretation, nondirective counseling, referral, consent, and autonomy. |
+| RNSG 2514 Day 1 | Postpartum hemorrhage | Day 1 / hemorrhage pathway | Early hemorrhage recognition, 4 Ts, quantified blood loss, escalation, and uterotonic safety. |
+| RNSG 2514 Day 2 | Preeclampsia progressing to HELLP | Day 2 | Severe features, laboratory trends, magnesium safety, escalation, and delivery planning. |
+| RNSG 2514 Day 2 | PPROM at 30 weeks | Day 2 | Infection surveillance, prematurity risk, expectant management, and chorioamnionitis recognition. |
+| RNSG 2514 Day 3 | Dystocia and failed induction | Day 3 | Tachysystole, Category II fetal-heart-rate trends, labor arrest, and escalation. |
+| RNSG 2514 Day 3–4 | Uterine rupture during TOLAC | Cross-day intrapartum emergency | Maternal hemorrhage, fetal compromise, and emergency operative response. |
+| RNSG 2514 Day 4 | Cord prolapse | Day 4 / emergency pathway | Recognition after membrane rupture, decompression actions, and expedited birth. |
+| RNSG 2514 Day 4 | GDM labor and neonatal hypoglycemia | Cross-day maternal-newborn transition | Maternal intrapartum context and newborn glucose-risk recognition and actions. |
+| RNSG 2514 Day 4 | IUFD and bereavement | Day 4 | Maternal physical safety, compassionate care, autonomy, cultural preferences, and follow-up. |
+
+### 3.2 Supporting Study Resources and Assessment Boundary
+
+The new resources are not slide content and should not be merged indiscriminately into the case library. They will be organized as distinct student study tools so learners can choose concise review, terminology practice, formative check-ins, or independent question practice without confusing these experiences with unfolding clinical cases.
+
+| Resource set | Student-facing application role | Access and implementation boundary |
+| --- | --- | --- |
+| RNSG 1523 and RNSG 2514 exit tickets | Day-specific start polls, end-of-day formative checks, remediation links, and completion history | Present only reviewed student-safe prompts and post-submission feedback; do not expose instructor analytics or undeployed answer-authoring notes. [26] [27] |
+| RNSG 1523 and RNSG 2514 high-yield guides | Searchable rapid-review cards, comparison tables, and topic-linked recall practice | Editorial repair and clinical verification are required before content conversion; no slide-number placeholders may be released. [28] [29] |
+| RNSG 1523 and RNSG 2514 terminology files | Searchable glossary, flashcards, concept comparisons, and contextual links to lessons/cases | Deduplicate the Markdown and CSV-derived source representations through a single canonical content record; verify current terminology, thresholds, and citations. [30] [31] [32] [33] |
+| RNSG 1523 and RNSG 2514 item banks | Optional student-practice area with filters by day, topic, item type, difficulty, and clinical-judgment step | Compile only a reviewed student-safe subset. Keep faculty keys, scoring analytics, author notes, and any graded-use content out of the public Vercel bundle. [34] [35] |
+| RNSG 2514 complications lesson plan | Faculty-facing planning/reference source used to map activities, objectives, drills, and review gates | Do not publish this source as a student activity; use it to validate case placement, learning objectives, and release criteria. [36] |
+
+Each case will remain independently launchable from the library, be linked contextually from relevant day pages, and include a clear topic, day, clinical-judgment-step, and content-sensitivity label. The listing itself is not a substitution for clinical verification; several files explicitly require review of institutional protocols, Texas legal/compliance statements, medication guidance, test thresholds, fetal monitoring, and source versions before release. [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25]
+
+The activity engine will be **data-driven**. Content authors will define the case stem, cues, options, correct answers, rationales, references, debrief, and clinical-judgment tags in reviewed content files. This avoids hard-coding individual questions into page components, enables faculty review of each answer key, and permits later expansion without redesigning the application. Every case record will include a case ID and version, primary/cross-day mappings, scene sequence, cognitive-operation tag, interaction schema, answers, rationales, distractors or misconceptions, clinical citations, review status, content-sensitivity flag, and student-feedback policy.
 
 ## 4. Student Experience, Navigation, and Credits
 
@@ -102,7 +139,10 @@ The existing study-guide and infographic folders will remain intact as source ma
 | `src/pages/` | Home, course, day, subject-deck, activity, credits, and source pages |
 | `src/components/` | Reusable deck frame, slide types, infographic viewer, progress indicator, NGN interaction controls, and accessibility helpers |
 | `content/courses/` | Faculty-reviewed course/day/topic data derived from the Markdown guides; this is the runtime source for presentation text |
-| `content/activities/` | Reviewed NGN activity data, answer keys, rationales, clinical-judgment tags, and references |
+| `content/cases/` | Faculty-reviewed supplementary unfolding-case metadata, scenes, interaction schemas, answers, rationales, debriefs, clinical-judgment tags, source links, and review status |
+| `content/activities/` | Daily formative polls, exit tickets, and student-safe NGN practice activity data |
+| `content/resources/` | High-yield review content, searchable terminology, flashcard data, concept comparisons, and resource-to-day links |
+| `content/item-banks/` | Student-safe practice items only; no faculty-secure keys, author notes, or protected assessment metadata in the deployable build |
 | `content/assets/asset-registry.json` | Visual-source, license, attribution, alt-text, placement, and approval metadata |
 | `scripts/` | Future content validation and asset-sync automation executed during development or build |
 | `public/` | Portrait and other deployable static files; source documents may remain outside the application’s route structure |
@@ -110,6 +150,10 @@ The existing study-guide and infographic folders will remain intact as source ma
 | `MASTER_PLAN_NCLEX_STUDY_APP.md` | This approved planning baseline |
 
 The application will use typed content schemas so a missing infographic, missing alt text, unapproved image source, unresolved answer key, broken route, or incomplete rationale fails validation before deployment. Browser-local storage will retain only non-sensitive study progress and preferences in the initial release. No learner name, grades, protected health information, or patient data will be collected.
+
+### 6.1 Student-Safe Content Boundary
+
+The case library, exit tickets, high-yield sheets, terminology decks, and any practice item bank may be student-facing only after clinical and faculty review. The static Vercel application must never be used to protect confidential or graded assessment material: any answer key, authoring note, faculty analytics field, item-statistics record, or secure exam content shipped in the browser bundle is discoverable by users. Therefore, the build pipeline will compile a **student-safe content subset** that may include post-submission rationales for formative practice, while secure assessments and faculty-only source files remain outside the public Vercel deployment and, if retained, outside any public repository. This boundary is required before an item bank can be called an assessment rather than voluntary study practice.
 
 ## 7. Vercel Deployment Architecture
 
@@ -129,7 +173,7 @@ The Vercel deployment section intentionally uses a static-first architecture. It
 
 ## 8. Quality, Safety, and Review Gates
 
-The current guides include at least two source-level discrepancies requiring resolution before conversion to graded or scored interactions: the RNSG 1523 Day 1 genetic-counseling/self-check gap and the RNSG 1523 Day 3 Tdap answer-key inconsistency. Time-sensitive clinical guidance, medication details, screening thresholds, vaccination recommendations, legal statements, and references across both courses must undergo faculty and authoritative-source review before publication. [1] [2] [5] [6]
+The current guides include at least two source-level discrepancies requiring resolution before conversion to graded or scored interactions: the RNSG 1523 Day 1 genetic-counseling/self-check gap and the RNSG 1523 Day 3 Tdap answer-key inconsistency. The new case and resource files add additional review gates, including local protocol alignment, source-version verification, sensitive bereavement language, minor confidentiality, reproductive-autonomy language, legal/compliance content, fetal monitoring, medication safety, and numeric thresholds. Time-sensitive clinical guidance, medication details, screening thresholds, vaccination recommendations, legal statements, and references across both courses must undergo faculty and authoritative-source review before publication. [1] [2] [5] [6] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25]
 
 | Gate | Required reviewer outcome | Blocks release if unresolved |
 | --- | --- | --- |
@@ -148,7 +192,7 @@ The following implementation sequence starts only after the master plan is appro
 | --- | --- | --- |
 | **0. Plan approval** | Approved scope, stack, visual system, content-governance rules, and content priorities | Authorize implementation |
 | **1. Application foundation** | Vite/React project, routes, design tokens, Vercel configuration, course/day navigation, and preview deployment | Approve visual shell and deployment behavior |
-| **2. Content pipeline and pilot** | Validated content schemas, asset registry, `1523 Day 1` pilot presentation, one infographic summary flow, and one NGN activity | Approve deck pattern, visual source treatment, and case feedback |
+| **2. Content pipeline and pilot** | Validated content schemas, asset registry, `1523 Day 1` pilot presentation, one infographic summary flow, the separate Adolescent Contraception NGN case, and a Day 1 formative exit ticket | Approve deck pattern, visual source treatment, case-player behavior, answer-feedback policy, and the separation between slides and activities |
 | **3. RNSG 1523 production** | Days 2–4 presentations, approved visuals, infographics, and day-end activities | Approve content completion and remediation flow |
 | **4. RNSG 2514 production** | Days 1–4 presentations, approved visuals, infographics, and day-end activities | Approve at-risk maternal/newborn content and emergency-case handling |
 | **5. Quality assurance** | Clinical/asset review records, accessibility audit, tests, mobile review, Vercel preview review, and content corrections | Approve production release |
@@ -166,6 +210,9 @@ Approval of this master plan authorizes only **Milestone 1** after the following
 | Image source policy | Faculty-approved, rights-cleared images only; no arbitrary hotlinks | Yes |
 | Credits | Use the exact Dr. Victor Garcia Martinez credit line and existing portrait in the introduction/credits context | Yes |
 | Assessment exposure | Student-safe activities and rationales only; no faculty-only exam bank in the public app | Yes |
+| Supplementary-case library | Launch all 14 reviewed unfolding cases from a separate NGN Clinical Cases area, with day and cross-day filters | Yes |
+| Case-to-day mapping | Treat the cross-day placements in Section 3.1 as provisional until faculty confirms each primary day | Yes |
+| Student feedback policy | Show rationales after a formative practice submission; keep secure or graded assessment keys out of the static build | Yes |
 | Clinical review workflow | Faculty approval required before each day is marked publishable | Yes |
 | Deployment workflow | Preview every approved branch/pull request in Vercel; production only after QA approval | Yes |
 
@@ -184,3 +231,28 @@ Approval of this master plan authorizes only **Milestone 1** after the following
 [9]: <https://www.nclex.com/clinical-judgment-measurement-model.page> "Clinical Judgment Measurement Model — NCLEX"
 [10]: <https://vercel.com/docs/frameworks/frontend/vite> "Vite on Vercel"
 [11]: <https://vercel.com/kb/guide/deploying-react-with-vercel> "Deploying React with Vercel"
+[12]: <RNSG1523_Case_AdolescentContraception_v1.md.md> "RNSG 1523 Case: Adolescent Contraception"
+[13]: <RNSG1523_Case_AbnormalQuadScreen_v1.md.md> "RNSG 1523 Case: Abnormal Quad Screen"
+[14]: <RNSG1523_Case_GDMDiagnosis_v1.md.md> "RNSG 1523 Case: GDM Diagnosis"
+[15]: <RNSG1523_Case_RhNegative_v1.md.md> "RNSG 1523 Case: Rh-Negative Pregnancy"
+[16]: <RNSG1523_Case_RisingBP_v1.md.md> "RNSG 1523 Case: Rising Blood Pressure"
+[17]: <RNSG1523_Case_WarningSignTriage_v1.md.md> "RNSG 1523 Case: Warning-Sign Triage"
+[18]: <RNSG2514_Case_PPH_v1.md.md> "RNSG 2514 Case: Postpartum Hemorrhage"
+[19]: <RNSG2514_Case_PreeclampsiaHELLP_v1.md.md> "RNSG 2514 Case: Preeclampsia and HELLP"
+[20]: <RNSG2514_Case_PPROM30wk_v1.md.md> "RNSG 2514 Case: PPROM at 30 Weeks"
+[21]: <RNSG2514_Case_DystociaFailedInduction_v1.md.md> "RNSG 2514 Case: Dystocia and Failed Induction"
+[22]: <RNSG2514_Case_UterineRuptureTOLAC_v1.md.md> "RNSG 2514 Case: Uterine Rupture During TOLAC"
+[23]: <RNSG2514_Case_CordProlapse_v1.md.md> "RNSG 2514 Case: Cord Prolapse"
+[24]: <RNSG2514_Case_GDMLaborNeonatalHypoglycemia_v1.md.md> "RNSG 2514 Case: GDM Labor and Neonatal Hypoglycemia"
+[25]: <RNSG2514_Case_IUFDBereavement_v1.md.md> "RNSG 2514 Case: IUFD and Bereavement"
+[26]: <RNSG1523_ExitTickets_v1.md.md> "RNSG 1523 Exit Tickets"
+[27]: <RNSG2514_ExitTickets_v1.md.md> "RNSG 2514 Exit Tickets"
+[28]: <RNSG1523_HighYield_v1.md.md> "RNSG 1523 High-Yield Review"
+[29]: <RNSG2514_HighYield_v1.md.md> "RNSG 2514 High-Yield Review"
+[30]: <RNSG1523_Terms_v1.md.md> "RNSG 1523 Terminology Deck"
+[31]: <RNSG1523_Terms_v1.csv.md> "RNSG 1523 Terminology CSV Source"
+[32]: <RNSG2514_Terms_v1.md.md> "RNSG 2514 Terminology Deck"
+[33]: <RNSG2514_Terms_v1.csv.md> "RNSG 2514 Terminology CSV Source"
+[34]: <RNSG1523_ItemBank_v1.md.md> "RNSG 1523 Item Bank"
+[35]: <RNSG2514_ItemBank_v1.md.md> "RNSG 2514 Item Bank"
+[36]: <RNSG2514_Complications_LessonPlan_APA.md.md> "RNSG 2514 Complications Lesson Plan"
