@@ -13,6 +13,8 @@ import CasesPage from "@/pages/CasesPage";
 import CasePlayer from "@/pages/CasePlayer";
 import ResourcesPage from "@/pages/ResourcesPage";
 import CreditsPage from "@/pages/CreditsPage";
+import InstructorPage from "@/pages/InstructorPage";
+import InstructorDeckPage from "@/pages/InstructorDeckPage";
 
 function Router() {
   return (
@@ -25,6 +27,8 @@ function Router() {
         <Route path="/cases/:caseId" component={CasePlayer} />
         <Route path="/cases" component={CasesPage} />
         <Route path="/resources" component={ResourcesPage} />
+        <Route path="/instructor/:courseId/:dayId" component={InstructorDeckPage} />
+        <Route path="/instructor" component={InstructorPage} />
         <Route path="/credits" component={CreditsPage} />
         <Route component={Home} />
       </Switch>

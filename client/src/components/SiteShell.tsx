@@ -1,13 +1,14 @@
 /** Clinical Field Notebook design: a persistent document rail keeps students oriented across study modes. */
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { BookOpenCheck, BrainCircuit, ClipboardCheck, Menu, X } from "lucide-react";
+import { BookOpenCheck, BrainCircuit, ClipboardCheck, GraduationCap, Menu, X } from "lucide-react";
 import { ClinicalMark } from "./ClinicalMark";
 
 const navigation = [
   { href: "/", label: "Study desk", icon: BookOpenCheck },
   { href: "/cases", label: "NGN clinical cases", icon: BrainCircuit },
   { href: "/resources", label: "Study resources", icon: ClipboardCheck },
+  { href: "/instructor", label: "Instructor teaching", icon: GraduationCap },
 ];
 
 export function SiteShell({ children }: { children: React.ReactNode }) {

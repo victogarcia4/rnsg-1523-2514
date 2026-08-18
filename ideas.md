@@ -74,3 +74,5 @@ The mark is a bold **nested chart-tab and pulse-line symbol**: three offset pape
 - The nested chart-tab + pulse-line mark recurs in primary navigation, course and case headers, and footer identity. Clinical Gold is reserved for the mark, progress numerals, and high-yield cues.
 - Course, day, and case browsing visibly use binder tabs, filing rails, numbered labels, and clipped paper edges rather than generic card grids.
 - Infographics and external educational visuals appear as labelled reference inserts or specimen-card plates within the notebook system.
+- Instructor collections use an explicit filed-document rail: the course archive, day cards, and metadata must read as indexed binder contents rather than a conventional card gallery.
+- The RNSG NCLEX Study Lab wordmark and nested chart-tab + pulse-line mark recur together in faculty headers, teaching-deck identity, and metadata zones; Clinical Gold signals high-yield/core content while oxblood marks complication and priority teaching.
